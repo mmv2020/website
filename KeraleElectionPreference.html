@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Analysis: Kerala Elections 2026</title>
+    <style>
+        :root {
+            --primary-bg: #f4f7f6;
+            --card-bg: #ffffff;
+            --accent-blue: #2563eb;
+            --accent-red: #dc2626;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--primary-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .prompt-box {
+            background: #eef2ff;
+            border-left: 5px solid var(--accent-blue);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .prompt-box h3 {
+            margin-top: 0;
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .prompt-content {
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .ai-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .ai-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ai-card h2 {
+            margin-top: 0;
+        }
+
+        .verdict {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .udf-tag { background-color: #dbeafe; color: #1e40af; }
+        .ldf-tag { background-color: #fee2e2; color: #991b1b; }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn-gemini { background-color: var(--accent-blue); color: white; }
+        .btn-chatgpt { background-color: var(--accent-red); color: white; }
+
+        .btn:hover { opacity: 0.9; }
+
+        @media (max-width: 600px) {
+            .comparison-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>The Battle of AI Perspectives</h1>
+        <p class="intro-text">
+            Who do you want to win the next Kerala assembly elections? I asked both <strong>Gemini</strong> and <strong>ChatGPT</strong> to analyze the landscape and pick a side. Their conclusions were strikingly different.
+        </p>
+    </header>
+
+    <div class="prompt-box">
+        <h3>The Expert Prompt</h3>
+        <div class="prompt-content">
+            "You are a politician and human development analyst. Analyze the development of Kerala and its political landscape in the last 50 years and tell me whether it is better for Kerala to elect the LDF or UDF in the upcoming election? Do an analysis on the the pros and cons of each one and tell me a final conclusive answer on definitely giving preference to one rather than trying to give a balanced answer."
+        </div>
+    </div>
+
+    <div class="comparison-grid">
+        <div class="ai-card">
+            <h2>Gemini</h2>
+            <div class="verdict udf-tag">Verdict: UDF</div>
+            <p>Focuses on fiscal realism, stopping the brain drain, and preventing institutional stagnation after 10 years of LDF rule.</p>
+            <a href="gemini_response_udf.html" class="btn btn-gemini">Read Full Response</a>
+        </div>
+
+        <div class="ai-card">
+            <h2>ChatGPT</h2>
+            <div class="verdict ldf-tag">Verdict: LDF</div>
+            <p>Emphasizes the continuity of social welfare models, crisis management, and long-term public infrastructure development.</p>
+            <a href="chatgpt_response_ldf.html" class="btn btn-chatgpt">Read Full Response</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
